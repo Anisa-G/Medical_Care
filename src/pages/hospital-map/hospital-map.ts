@@ -12,7 +12,7 @@ declare var google;
 })
 export class HospitalMapPage {
   image: any;
-  
+
   @ViewChild('map') mapElement: ElementRef;
   map: any;
 
@@ -22,7 +22,7 @@ export class HospitalMapPage {
 
   ionViewDidLoad() {
     this.initMap();
-    
+
   }
 
   // loadMap() {
@@ -47,12 +47,12 @@ export class HospitalMapPage {
 
   initMap() {
 
-    var location ={lat:  41.3188151, lng: 19.8112196}; 
+    var location ={lat:  41.3188151, lng: 19.8112196};
   var Tirane={lat:41.328209, lng:19.818061};
   var Durres={lat:41.324716, lng:19.456588};
 
-  
- 
+
+
 
     var infoWindow,map = new google.maps.Map(document.getElementById('map'), {
       zoom: 18,
@@ -60,7 +60,7 @@ export class HospitalMapPage {
 
     });
     infoWindow = new google.maps.InfoWindow;
-    
+
     this.image = 'assets/icon/custom-marker.png'
     var marker = new google.maps.Marker({
       position: location,
@@ -90,7 +90,7 @@ export class HospitalMapPage {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-  
+
         infoWindow.setPosition(pos);
         infoWindow.setContent('Location found.');
         infoWindow.open(map);
@@ -111,7 +111,7 @@ export class HospitalMapPage {
         }
     }
   }
-  
+
 
 
 

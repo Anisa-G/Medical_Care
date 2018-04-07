@@ -13,9 +13,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
 
+import { AngularFireModule } from 'angularfire2';
 
 import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
 
+import { FirebaseCofig } from './dbConfig';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ListcomponentComponent } from '../components/listcomponent/listcomponen
   imports: [
     BrowserModule,
     IonicModule,
-        IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FirebaseCofig),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

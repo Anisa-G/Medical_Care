@@ -28,7 +28,4 @@ export class HomePage {
     this.navCtrl.push(AllSymptomsPage);
   }
 
-  goToMapDirectly(){
-    this.navCtrl.push(HospitalMapPage);
-  }
 }

@@ -17,7 +17,7 @@ import { AngularFireModule } from 'angularfire2';
 
 import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
 
-import { FirebaseCofig } from './dbConfig';
+import { FirebaseConfig } from './dbConfig';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { FirebaseCofig } from './dbConfig';
     BrowserModule,
     IonicModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FirebaseCofig),
+    AngularFireModule.initializeApp(FirebaseConfig),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

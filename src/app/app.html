@@ -5,25 +5,25 @@
         </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content no-padding>
 
         <ion-card text-center class="hide-card">
             <img src="../assets/imgs/redmedicalpngnoforeground.png" height="220px" />
         </ion-card>
 
-        <ion-list>
+        <ion-list *ngFor="let p of pages" no-padding no-margin>
 
-            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="menuList">
-                    <ion-avatar item-left>
-                            <img src="{{p.img}}" class="item-avatar">
-                          </ion-avatar>
+            <button menuClose ion-item (click)="openPage(p)" class="menuList" no-margin>
+                <ion-avatar item-left >
+                    <img src="{{p.img}}" class="item-avatar">
+                </ion-avatar>
           <!-- <img [src]="p.icon" item-left> -->
-        {{p.title}}
-      </button>
+                 {{p.title}}
+            </button>
         </ion-list>
     </ion-content>
 
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>

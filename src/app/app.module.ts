@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ListPage } from '../pages/list/list';
 import { ContactPage } from '../pages/contact/contact';
+import { TreatmentPage } from '../pages/treatment/treatment';
 import { TabsPage } from '../pages/tabs/tabs';
 import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
@@ -30,6 +31,7 @@ import { FirebaseConfig } from './dbConfig';
     BodyMappingPage,
     AllSymptomsPage,
     ListcomponentComponent,
+    TreatmentPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,7 @@ import { FirebaseConfig } from './dbConfig';
     ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
-    ListcomponentComponent,
+    TreatmentPage
   ],
   providers: [
     StatusBar,

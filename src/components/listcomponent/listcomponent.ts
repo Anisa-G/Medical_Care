@@ -12,14 +12,6 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'listcomponent.html'
 })
 export class ListcomponentComponent implements OnInit {
-
-  // text: string;
-
-  // constructor() {
-  //   console.log('Hello ListcomponentComponent Component');
-  //   this.text = 'Hello World';
-  // }
-
   items: string[];
 
   accordionExapanded = false;
@@ -43,7 +35,7 @@ export class ListcomponentComponent implements OnInit {
       this.renderer.setElementStyle(this.cardContent.nativeElement, "padding", "0px 5px");
 
     } else {
-      this.renderer.setElementStyle(this.cardContent.nativeElement, "max-height", "500px");
+      this.renderer.setElementStyle(this.cardContent.nativeElement, "max-height", "400px");
       this.renderer.setElementStyle(this.cardContent.nativeElement, "padding", "13px 16px");
 
     }

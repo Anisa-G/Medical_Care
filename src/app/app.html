@@ -8,12 +8,12 @@
     <ion-content>
 
         <ion-card text-center class="hide-card">
-            <img src="../assets/imgs/redmedicalpngnoforeground.png" height="200px" />
+            <img src="../assets/imgs/redmedicalpngnoforeground.png" height="220px" />
         </ion-card>
 
         <ion-list>
             <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="menuList">
-          <ion-icon [name]="p.icon" item-left></ion-icon>
+          <!-- <img [src]="p.icon" item-left> -->
         {{p.title}}
       </button>
         </ion-list>

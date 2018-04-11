@@ -7,6 +7,9 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ContactPage } from '../pages/contact/contact';
+import { TreatmentPage } from '../pages/treatment/treatment';
+import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
+import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
 
 
 @Component({
@@ -20,17 +23,20 @@ export class MyApp {
 
   rootPage: any = TabsPage;
 
-  pages: Array<{ title: string, component: any, icon: string }>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, icon: "home" },
-      { title: 'Spitalet', component: ListPage, icon: "clipboard"},
-      { title: 'Kontakto', component: ContactPage, icon: "contact" },
-      { title: 'Hospital Map', component: HospitalMapPage, icon: "locate" }
+      { title: 'Home', component: HomePage },
+      { title: 'Spitalet', component: ListPage },
+      { title: 'Diagnoza', component: TreatmentPage },
+      { title: 'Pjeset e Trupit', component: BodyMappingPage },
+      { title: 'Simptomat', component: AllSymptomsPage },
+      { title: 'Harta e Spitaleve ', component: HospitalMapPage },
+      { title: 'Kontakto', component: ContactPage }
     ];
 
   }

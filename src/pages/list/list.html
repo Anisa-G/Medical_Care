@@ -8,14 +8,14 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content >
-<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
-<ion-list>
-    <ion-item *ngFor="let items of Cities" >
-        <!-- <ion-label>{{ item }} </ion-label> -->
-        <listcomponent title="{{ items }}" ></listcomponent> 
+    <ion-list>
+        <ion-item *ngFor="let items of Cities" no-padding no-margin>
+            <!-- <ion-label>{{ item }} </ion-label> -->
+            <listcomponent title="{{ items }}"></listcomponent>
 
-    </ion-item>
-</ion-list>
+        </ion-item>
+    </ion-list>
 </ion-content>

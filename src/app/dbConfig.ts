@@ -1,4 +1,4 @@
-export const FirebaseCofig = {
+export const FirebaseConfig = {
     apiKey: "AIzaSyCKmYgWNr5qGAeX3AueCXfPIhN7gtavipY",
     authDomain: "medicalare1.firebaseapp.com",
     databaseURL: "https://medicalare1.firebaseio.com",

@@ -12,7 +12,11 @@
         </ion-card>
 
         <ion-list>
+
             <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="menuList">
+                    <ion-avatar item-left>
+                            <img src="{{p.img}}" class="item-avatar">
+                          </ion-avatar>
           <!-- <img [src]="p.icon" item-left> -->
         {{p.title}}
       </button>

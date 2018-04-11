@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ContactPage } from '../pages/contact/contact';
 import { TreatmentPage } from '../pages/treatment/treatment';
 import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
@@ -23,20 +22,19 @@ export class MyApp {
 
   rootPage: any = TabsPage;
 
-  pages: Array<{ title: string, component: any }>;
+  pages: Array<{ title: string, component: any, img: string }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Spitalet', component: ListPage },
-      { title: 'Diagnoza', component: TreatmentPage },
-      { title: 'Pjeset e Trupit', component: BodyMappingPage },
-      { title: 'Simptomat', component: AllSymptomsPage },
-      { title: 'Harta e Spitaleve ', component: HospitalMapPage },
-      { title: 'Kontakto', component: ContactPage }
+      { title: 'Home', component: HomePage, img: "../assets/imgs/building.png" },
+      { title: 'Spitalet', component: ListPage, img: "../assets/imgs/building.png" },
+      { title: 'Diagnoza', component: TreatmentPage, img: "../assets/imgs/phonendoscope.png"  },
+      { title: 'Pjeset e Trupit', component: BodyMappingPage, img: "../assets/imgs/body mapping.png"  },
+      { title: 'Simptomat', component: AllSymptomsPage, img: "../assets/imgs/disease list.png"  },
+      { title: 'Kontakto', component: ContactPage, img: ""  }
     ];
 
   }

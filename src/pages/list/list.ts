@@ -44,7 +44,7 @@ export class ListPage {
       'Vlora',
       'Gjirokaster',
       'Kukes',
-      'Tropoj'
+      'Tropoje'
     ];
   }
 

@@ -3,7 +3,6 @@ import { NavController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import { BodyMappingPage } from '../body-mapping/body-mapping';
 import { AllSymptomsPage } from '../all-symptoms/all-symptoms';
-import { HospitalMapPage } from '../hospital-map/hospital-map';
 import { TreatmentPage } from '../treatment/treatment';
 
 @Component({

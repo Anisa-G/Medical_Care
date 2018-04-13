@@ -29,12 +29,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, img: "../assets/imgs/building.png" },
+      { title: 'Home', component: HomePage, img: "../assets/imgs/heard.png" },
       { title: 'Spitalet', component: ListPage, img: "../assets/imgs/building.png" },
-      { title: 'Diagnoza', component: TreatmentPage, img: "../assets/imgs/phonendoscope.png"  },
+      { title: 'Diagnoza', component: TreatmentPage, img: "../assets/imgs/stetoscope.png"  },
       { title: 'Pjeset e Trupit', component: BodyMappingPage, img: "../assets/imgs/body mapping.png"  },
-      { title: 'Simptomat', component: AllSymptomsPage, img: "../assets/imgs/disease list.png"  },
-      { title: 'Kontakto', component: ContactPage, img: ""  }
+      { title: 'Simptomat', component: AllSymptomsPage, img: "../assets/imgs/list.png"  },
+      { title: 'Kontakto', component: ContactPage, img: "../assets/imgs/contact.png" }
     ];
 
   }

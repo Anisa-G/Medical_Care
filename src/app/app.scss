@@ -17,5 +17,12 @@
 }
 
 .menuList {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(242, 234, 233);
+}
+
+.item-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 55px !important; //any size
+    max-height: 55px !important; //any size 
 }

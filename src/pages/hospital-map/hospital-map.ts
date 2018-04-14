@@ -12,7 +12,7 @@ declare var google;
 })
 export class HospitalMapPage {
   image: any;
-  
+
   @ViewChild('map') mapElement: ElementRef;
   map: any;
 
@@ -22,7 +22,7 @@ export class HospitalMapPage {
 
   ionViewDidLoad() {
     this.initMap();
-    
+
   }
 
   // loadMap() {
@@ -47,20 +47,20 @@ export class HospitalMapPage {
 
   initMap() {
 
-    var location ={lat:  41.3188151, lng: 19.8112196}; 
-  var Tirane={lat:41.328209, lng:19.818061};
-  var Durres={lat:41.324716, lng:19.456588};
+    var location = { lat: 41.3188151, lng: 19.8112196 };
+    var Tirane = { lat: 41.328209, lng: 19.818061 };
+    var Durres = { lat: 41.324716, lng: 19.456588 };
 
-  
- 
 
-    var infoWindow,map = new google.maps.Map(document.getElementById('map'), {
+
+
+    var infoWindow, map = new google.maps.Map(document.getElementById('map'), {
       zoom: 18,
       center: location
 
     });
     infoWindow = new google.maps.InfoWindow;
-    
+
     this.image = 'assets/icon/custom-marker.png'
     var marker = new google.maps.Marker({
       position: location,
@@ -78,40 +78,40 @@ export class HospitalMapPage {
     };
     // Pass the directions request to the directions service.
     var directionsService = new google.maps.DirectionsService();
-    directionsService.route(request, function(response, status) {
+    directionsService.route(request, function (response, status) {
       if (status == 'OK') {
         // Display the route on the map.
         directionsDisplay.setDirections(response);
       }
     });
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
+      navigator.geolocation.getCurrentPosition(function (position) {
         var pos = {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-  
+
         infoWindow.setPosition(pos);
         infoWindow.setContent('Location found.');
         infoWindow.open(map);
         map.setCenter(pos);
-      }, function() {
+      }, function () {
         handleLocationError(true, infoWindow, map.getCenter());
       });
     } else {
       // Browser doesn't support Geolocation
       handleLocationError(false, infoWindow, map.getCenter());
     }
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
-        }
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      infoWindow.setPosition(pos);
+      infoWindow.setContent(browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.');
+      infoWindow.open(map);
     }
   }
-  
+}
+
 
 
 

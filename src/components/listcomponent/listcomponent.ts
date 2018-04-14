@@ -45,15 +45,9 @@ export class ListcomponentComponent implements OnInit {
 
   }
 
-  // initializeItems() {
-  //   this.items = [
-  //     'Nene Tereza',
-  //     'Ushtarak'
 
-  //   ];
-  // }
   goHospitalAsked(title){
-    console.log(title);
-    // this.initializeItems();
+  
+   
   }
 }

@@ -27,9 +27,6 @@ export class ListPage {
     this.initializeHospitals();
     
   }
-  //-----------------------------------------------------------------------------
-  // Kjo mund te behet o nga nje json array ose mund te behet keshtu statike
-  //-----------------------------------------------------------------------------
   initializeHospitals() {
     this.Cities = [
       'Tirana',

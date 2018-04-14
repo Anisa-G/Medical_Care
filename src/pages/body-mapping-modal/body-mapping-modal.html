@@ -11,7 +11,7 @@
         </ion-title>
 
         <ion-buttons end>
-            <button ion-button strong>
+            <button ion-button strong (click)="getSelectedPart(event)">
               Shiko
             </button>
         </ion-buttons>
@@ -19,10 +19,19 @@
 </ion-header>
 
 <ion-content no-padding>
-    <ion-list>
-        <ion-item *ngFor="let items of excludedTrackNames">
-            <ion-label>{{ items }} </ion-label>
-            <ion-toggle color="secondary"></ion-toggle>
-        </ion-item>
-    </ion-list>
+    <form [formGroup]="partForm">
+
+        <ion-list radio-group formControlName="part">
+
+            <ion-item *ngFor="let items of excludedTrackNames">
+
+                <ion-label>{{ items }} </ion-label>
+
+                <ion-radio value="{{items}}" color="danger"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </form>
 </ion-content>

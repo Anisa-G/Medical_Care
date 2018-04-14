@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { FormGroup, FormControl } from '@angular/forms';
 
 /**
  * Generated class for the BodyMappingModalPage page.
@@ -15,12 +16,24 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class BodyMappingModalPage {
   private excludedTrackNames: any[];
+  segment: any = "";
 
+  part;
+  partForm;
   constructor(private navCtrl: NavController, private navParams: NavParams, private viewCtrl: ViewController) {
     this.excludedTrackNames = this.navParams.data;
+
+    this.partForm = new FormGroup({
+      "part": new FormControl({disabled: false})
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+  
+  getSelectedPart($event) {
+    console.log('Submitting form', this.partForm.value.part);
+    event.preventDefault();
   }
 }

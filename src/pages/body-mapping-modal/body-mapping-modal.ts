@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 import { FormGroup, FormControl } from '@angular/forms';
 
 /**
@@ -20,7 +20,7 @@ export class BodyMappingModalPage {
 
   part;
   partForm;
-  constructor(private navCtrl: NavController, private navParams: NavParams, private viewCtrl: ViewController) {
+  constructor(private navParams: NavParams, private viewCtrl: ViewController) {
     this.excludedTrackNames = this.navParams.data;
 
     this.partForm = new FormGroup({
@@ -33,7 +33,6 @@ export class BodyMappingModalPage {
   }
   
   getSelectedPart($event) {
-    console.log('Submitting form', this.partForm.value.part);
-    event.preventDefault();
+    console.log(this.partForm.value.part);
   }
 }

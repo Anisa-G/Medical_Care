@@ -15,6 +15,7 @@ import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
 
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 
 import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
 
@@ -38,6 +39,7 @@ import { FirebaseConfig } from './dbConfig';
     IonicModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FirebaseConfig),
+    AngularFireDatabaseModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -54,6 +56,7 @@ import { FirebaseConfig } from './dbConfig';
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

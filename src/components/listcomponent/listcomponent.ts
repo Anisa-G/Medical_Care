@@ -21,7 +21,7 @@ export class ListcomponentComponent implements OnInit {
   icon: string = "arrow-forward";
 
   constructor(public renderer: Renderer, public navCntr: NavController) {
-    // this.initializeItems();
+   
   }
 
   ngOnInit() {

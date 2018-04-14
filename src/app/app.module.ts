@@ -20,6 +20,7 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
 
 import { FirebaseConfig } from './dbConfig';
+import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-modal';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FirebaseConfig } from './dbConfig';
     BodyMappingPage,
     AllSymptomsPage,
     ListcomponentComponent,
-    TreatmentPage
+    TreatmentPage,
+    BodyMappingModalPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { FirebaseConfig } from './dbConfig';
     ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
-    TreatmentPage
+    TreatmentPage,
+    BodyMappingModalPage
   ],
   providers: [
     StatusBar,

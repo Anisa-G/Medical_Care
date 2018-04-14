@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the BodyMappingModalPage page.
@@ -14,12 +14,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'body-mapping-modal.html',
 })
 export class BodyMappingModalPage {
+  private excludedTrackNames: any[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private navCtrl: NavController, private navParams: NavParams, private viewCtrl: ViewController) {
+    this.excludedTrackNames = this.navParams.data;
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad BodyMappingModalPage');
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
-
 }

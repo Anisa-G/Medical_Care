@@ -4,7 +4,7 @@
              <ion-icon name="menu"></ion-icon>
         </button>
 
-        <ion-segment color="danger" [(ngModel)]="segment">
+        <ion-segment color="danger" [(ngModel)]="segment" (ionChange)="changeBodyLevelToStart(segment)">
             <ion-segment-button value="organe">
                 Organe
             </ion-segment-button>
@@ -14,13 +14,17 @@
         </ion-segment>
 
         <ion-buttons end>
-            <button ion-button icon-only>
-                    <ion-icon ios="ios-list" md="md-list"></ion-icon>
+            <button ion-button icon-only (click)="">
+               <ion-icon ios="ios-list" md="md-list"></ion-icon>
             </button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
 
 <ion-content no-padding>
-
+    <!-- <ion-list>
+        <ion-item *ngFor="let items of listOfPart" no-padding no-margin>
+            <ion-label>{{ items }} </ion-label>
+        </ion-item>
+    </ion-list> -->
 </ion-content>

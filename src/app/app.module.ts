@@ -16,7 +16,6 @@ import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
-
 import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
 
 import { FirebaseConfig } from './dbConfig';

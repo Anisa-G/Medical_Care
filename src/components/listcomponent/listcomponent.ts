@@ -1,5 +1,8 @@
 import { Component, Renderer, OnInit, ViewChild, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
+
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
 // import { HospitalMapPage} from '../../pages/hospital-map/hospital-map';
 /**
  * Generated class for the ListcomponentComponent component.
@@ -17,15 +20,30 @@ export class ListcomponentComponent implements OnInit {
   accordionExapanded = false;
  @ViewChild("cc") cardContent: any;
  @Input('title') title: string;
+ ObsItem: Observable<any[]>;
 
   icon: string = "arrow-forward";
+  private arrData = [];
 
-  constructor(public renderer: Renderer, public navCntr: NavController) {
+  constructor(public renderer: Renderer, public navCntr: NavController,public navCtrl: NavController,public afDB: AngularFireDatabase) {
+    this.ObsItem = afDB.list('/Sys/Spitalet/Berat/').valueChanges();
+    console.log(this.ObsItem.subscribe(_data =>{
+          this.arrData = _data;
+          console.log(this.arrData);
+        }));
+    
+    //  this.afDB.list('/Sys/').valueChanges(_data =>{
+    //     this.arrData = _data;
+    //     console.log(this.arrData);
+    //   });
+
+    
+    // console.log(this.ObsItem);
    
   }
 
   ngOnInit() {
-    console.log(this.cardContent.nativeElement);
+    // console.log(this.cardContent.nativeElement);
     this.renderer.setElementStyle(this.cardContent.nativeElement, "webkitTransition", "max-height 500ms, padding 500ms");
   }
 
@@ -47,7 +65,10 @@ export class ListcomponentComponent implements OnInit {
 
 
   goHospitalAsked(title){
-  
-   
+    // this.ObsItem = this.afDB.list('Sys/title').valueChanges();
+    // console.log(this.ObsItem.subscribe(_data =>{
+    //       this.arrData = _data;
+    //       console.log(this.arrData);
+    //     }));
   }
 }

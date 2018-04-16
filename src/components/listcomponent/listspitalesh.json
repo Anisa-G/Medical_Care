@@ -1,0 +1,128 @@
+{
+    "Spitalet": {
+        "Berat": {
+            "Spitali Rajonal Berat": {
+                "lat": 40.70191,
+                "long": 19.96848
+            }
+        },
+        "Durres": {
+            "Spitali Rajonal Durres": {
+                "lat": 41.3263769,
+                "long": 19.4426859
+            }
+        },
+        "Elbasan": {
+            "Spitali Psikik Elbasan": {
+                "lat": 41.125478,
+                "long": 20.085571
+            },
+            "Spitali Rajonal Elbasan": {
+                "lat": 41.125221,
+                "long": 20.081068
+            }
+        },
+        "Gjirokaster": {
+            "Spitali \"Omer Nishani\"": {
+                "lat": 40.083914,
+                "long": 20.141758
+            }
+        },
+        "Kruje": {
+            "Spitali Kruje": {
+                "lat": 41.516058,
+                "long": 19.790183
+            }
+        },
+        "Kukes": {
+            "Spitali i Kukesit": {
+                "lat": 42.082271,
+                "long": 20.415743
+            }
+        },
+        "Peshkopi": {
+            "Spitali i Peshkopise": {
+                "lat": 41.687355,
+                "long": 20.426304
+            }
+        },
+        "Sarande": {
+            "Spitali i Sarandes": {
+                "lat": 39.874369,
+                "long": 20.00097
+            }
+        },
+        "Shkoder": {
+            "Spitali Rajonal i Shkodrës": {
+                "lat": 42.074228,
+                "long": 42.074228
+            }
+        },
+        "Tirana ": {
+            "Nene Tereza": {
+                "lat": 41.340335,
+                "long": 19.83457
+            },
+            "SALUS Spitali Italian": {
+                "lat": 41.341118,
+                "long": 19.760885
+            },
+            "Spitali Amerikan": {
+                "lat": 41.343407,
+                "long": 19.795746
+            },
+            "Spitali Gjerman": {
+                "lat": 41.326467,
+                "long": 19.80627
+            },
+            "Spitali Hygeia": {
+                "lat": 41.344378,
+                "long": 19.774236
+            },
+            "Spitali Universitar \"Shefqet Ndroqi\"": {
+                "lat": 41.313794,
+                "long": 19.843954
+            },
+            "Spitali Universitar Obstetrik Gjinekologjik \"Mbretëresha Geraldinë”": {
+                "lat": 41.334563,
+                "long": 19.817396
+            },
+            "Spitali Universitar i Traumes": {
+                "lat": 41.343492,
+                "long": 19.795257
+            },
+            "Spitali i Neurokirurgjise": {
+                "lat": 41.339295,
+                "long": 19.836898
+            },
+            "Spitali i Neurologjise": {
+                "lat": 41.339039,
+                "long": 19.837256
+            },
+            "Spitali i Pediatrisë": {
+                "lat": 41.339298,
+                "long": 19.834807
+            },
+            "Spitali i Psikiatrise": {
+                "lat": 41.338626,
+                "long": 19.83714
+            },
+            "Ushtarak": {
+                "lat": 41.343492,
+                "long": 19.795257
+            }
+        },
+        "Tropoje": {
+            "Sptali Tropoje": {
+                "lat": 42.363564,
+                "long": 20.074977
+            }
+        },
+        "Vlore": {
+            "Spitali Rajonal Vlore": {
+                "lat": 40.477717,
+                "long": 19.500598
+            }
+        }
+    }
+}

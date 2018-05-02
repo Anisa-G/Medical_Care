@@ -29,7 +29,7 @@ export class ListPage {
   }
   initializeHospitals() {
     this.Cities = [
-      'Tirana',
+      'Tirana ',
       'Durres',
       'Berat',
       'Diber',

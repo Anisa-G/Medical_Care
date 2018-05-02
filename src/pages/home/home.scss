@@ -37,6 +37,25 @@ page-home {
     }
     #cardTitle {
         position: relative;
-        text-align: center;
+        text-align: left;
+    }
+    .contentClass {
+        background-image: url("../../assets/imgs/LandingPageMockUpV3.1 - Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .itemCardMainComponent {
+        border-radius: 25px;
+    }
+    .smallImage {
+        height: 35px;
+        width: 35px;
+    }
+    .mainImageView {
+        position: relative;
+        left: 75px;
+        top: 10px;
+        height: 100px;
+        width: 80%;
     }
 }

@@ -14,7 +14,6 @@ import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
-import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
 import { FirebaseConfig } from './dbConfig';
 import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-modal';
 
@@ -27,7 +26,6 @@ import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-m
     ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
-    ListcomponentComponent,
     TreatmentPage,
     BodyMappingModalPage
   ],

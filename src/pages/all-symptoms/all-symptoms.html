@@ -14,6 +14,55 @@
 </ion-header>
 
 
-<ion-content no-padding>
+<ion-content class="contentClass" no-bounce>
+    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
 
+        <ion-slide>
+            <h2 class="slide-title">
+                Informacjon i pergjthshem
+            </h2>
+            <ion-input col-8 type="text" placeholder="Mosha" aria-required="true" center></ion-input>
+            <ion-row>
+                <ion-col col-md-6>
+                    <button ion-button outline>
+                        Mashkull
+                    </button>
+                </ion-col>
+                <ion-col col-md-6>
+                    <button ion-button outline>
+                        Femer
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-slide>
+
+        <ion-slide>
+            <h2 class="slide-title">Pershkruaj Semundjen</h2>
+            <ion-input col-10 placeholder="P.Sh dhimbje koke"></ion-input>
+        </ion-slide>
+
+        <ion-slide>
+            <h2 class="slide-title">Pershkruaj Mjekimet</h2>
+            <ion-label>Mjekimi i tanishem</ion-label>
+            <ion-input col-8 placeholder="P.Sh ..."></ion-input>
+            <br/>
+            <ion-label>Mjekimi i meparshem</ion-label>
+            <ion-input col-8 placeholder="P.Sh ..."></ion-input>
+        </ion-slide>
+
+
+        <ion-slide>
+            <ion-label>Gjendja e tanishme</ion-label>
+            <ion-input col-8 placeholder="P.Sh ..."></ion-input>
+        </ion-slide>
+
+        <ion-slide>
+            <h2 class="slide-title">Gjej semundjen</h2>
+            <button ion-button icon-end large clear>
+            Vazhdo
+            <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </ion-slide>
+
+    </ion-slides>
 </ion-content>

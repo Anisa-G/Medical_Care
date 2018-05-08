@@ -10,15 +10,12 @@ import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ListPage } from '../pages/list/list';
 import { ContactPage } from '../pages/contact/contact';
 import { TreatmentPage } from '../pages/treatment/treatment';
-import { TabsPage } from '../pages/tabs/tabs';
 import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
-
 import { AngularFireModule } from 'angularfire2';
-
-import { ListcomponentComponent } from '../components/listcomponent/listcomponent';
-
+import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
 import { FirebaseConfig } from './dbConfig';
+import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-modal';
 
 @NgModule({
   declarations: [
@@ -26,18 +23,18 @@ import { FirebaseConfig } from './dbConfig';
     HomePage,
     ListPage,
     HospitalMapPage,
-    TabsPage,
     ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
-    ListcomponentComponent,
-    TreatmentPage
+    TreatmentPage,
+    BodyMappingModalPage
   ],
   imports: [
     BrowserModule,
     IonicModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FirebaseConfig),
+    AngularFireDatabaseModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,15 +42,16 @@ import { FirebaseConfig } from './dbConfig';
     HomePage,
     ListPage,
     HospitalMapPage,
-    TabsPage,
     ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
-    TreatmentPage
+    TreatmentPage,
+    BodyMappingModalPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

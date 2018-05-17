@@ -15,7 +15,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   templateUrl: 'body-mapping-modal.html',
 })
 export class BodyMappingModalPage {
-  private excludedTrackNames: any[];
+   excludedTrackNames: any[];
   segment: any = "";
 
   part;
@@ -31,7 +31,7 @@ export class BodyMappingModalPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
-  
+
   getSelectedPart($event) {
     console.log(this.partForm.value.part);
   }

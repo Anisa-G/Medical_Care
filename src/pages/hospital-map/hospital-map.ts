@@ -111,7 +111,3 @@ export class HospitalMapPage {
     }
   }
 }
-
-
-
-

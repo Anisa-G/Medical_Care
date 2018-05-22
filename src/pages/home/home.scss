@@ -49,21 +49,23 @@ page-home {
         padding: 0%;
     }
     .smallImage {
-        height: 35px;
-        width: 35px;
+        position: relative;
+        height: 27px;
+        width: 27px;
+        left: 7px;
     }
     .mainImageView {
         position: relative;
         left: 115px;
         top: 15px;
         height: 85px;
-        width: 65%;
+        width: 59%;
     }
     .paragraph{
       text-align: center;
       text-shadow: 3px;
       color: #32db64;
-      float: left;
+      float: center;
     }
 
     .paragraphDown{

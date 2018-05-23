@@ -45,8 +45,7 @@ page-home {
         background-size: cover;
     }
     .itemCardMainComponent {
-        border-radius: 25px;
-        padding: 0%;
+        border-radius: 80px;
     }
     .smallImage {
         position: relative;
@@ -61,26 +60,21 @@ page-home {
         height: 85px;
         width: 59%;
     }
-    .paragraph{
-      text-align: center;
-      text-shadow: 3px;
-      color: #32db64;
-      float: center;
+    .paragraph {
+        text-align: center;
+        text-shadow: 3px;
+        color: #32db64;
+        float: center;
     }
-
-    .paragraphDown{
-      text-align: center;
-      text-shadow: 3px;
-      color: #32db64;
+    .paragraphDown {
+        text-align: center;
+        text-shadow: 3px;
+        color: #32db64;
     }
-
-    .tipPrase{
-      text-shadow: 3px;
-      color: #1e2c23;
-      padding-top: 125px;
-      text-align: center;
+    .tipPrase {
+        text-shadow: 3px;
+        color: #1e2c23;
+        padding-top: 125px;
+        text-align: center;
     }
-
-
-
 }

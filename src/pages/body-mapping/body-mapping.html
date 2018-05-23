@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-navbar no-border-bottom>
+    <ion-navbar>
         <button ion-button menuToggle>
              <ion-icon name="menu"></ion-icon>
         </button>
@@ -19,43 +19,41 @@
             </button>
         </ion-buttons>
     </ion-navbar>
-
-
-
-  <ion-list>
-<ion-card class="smthelse">
-    <ion-item>
-      <img src="../../assets/imgs/zemra.png" item-left class="smallImage"> 
-      <p class="paragraphy"> <font size="2">Zemra</font>	 </p>
-    </ion-item>
-  </ion-card>
-
-  <ion-card class="smthelse">
-    <img src="../../assets/imgs/truRed.png" item-left class="smallImage">
-</ion-card>
-
-<ion-card class="smthelse">
-    <img src="../../assets/imgs/VeshkaRedMduket.png" item-left class="smallImage">
-</ion-card>
-
-<ion-card class="smthelse">
-    <img src="../../assets/imgs/stomakRed.png" item-left class="smallImage">
-</ion-card>
-
-<ion-card class="smthelse">
-    <img src="../../assets/imgs/mushkriRed.png" item-left class="smallImage">
-</ion-card>
-
-</ion-list> 
-
-
 </ion-header>
 
-
 <ion-content class="contentClass" no-padding>
-    <!-- <ion-list>
-        <ion-item *ngFor="let items of listOfPart" no-padding no-margin>
-            <ion-label>{{ items }} </ion-label>
-        </ion-item>
-    </ion-list> -->
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-8>
+
+                <ion-card>
+                    <ion-item no-padding class="bodyMapItems">
+                        <img src="../../assets/imgs/zemra.png">
+                    </ion-item>
+                </ion-card>
+
+                <ion-card>
+                    <ion-item no-padding class="bodyMapItems">
+                        <img src="../../assets/imgs/truRed.png">
+                    </ion-item>
+                </ion-card>
+
+                <ion-card>
+                    <ion-item no-padding class="bodyMapItems">
+                        <img src="../../assets/imgs/stomakRed.png">
+                    </ion-item>
+                </ion-card>
+
+                <ion-card>
+                    <ion-item no-padding class="bodyMapItems">
+                        <img src="../../assets/imgs/mushkriRed.png">
+                    </ion-item>
+                </ion-card>
+
+            </ion-col>
+            <ion-col col-4></ion-col>
+        </ion-row>
+    </ion-grid>
+
 </ion-content>

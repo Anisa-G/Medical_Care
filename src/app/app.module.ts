@@ -8,7 +8,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ListPage } from '../pages/list/list';
-import { ContactPage } from '../pages/contact/contact';
 import { TreatmentPage } from '../pages/treatment/treatment';
 import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
@@ -23,7 +22,6 @@ import { FirebaseConfig } from './dbConfig';
     HomePage,
     ListPage,
     HospitalMapPage,
-    ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
     TreatmentPage,
@@ -43,7 +41,6 @@ import { FirebaseConfig } from './dbConfig';
     HomePage,
     ListPage,
     HospitalMapPage,
-    ContactPage,
     BodyMappingPage,
     AllSymptomsPage,
     TreatmentPage,

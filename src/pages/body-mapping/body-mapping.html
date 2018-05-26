@@ -20,51 +20,53 @@
 
     <ion-grid>
         <ion-row>
-            <ion-col col-8>
-
-                <ion-list>
+            <ion-col col-8 no-padding>
+                <ion-list no-padding>
                     <ion-card *ngFor="let item of listOfPart" class="bodyMapCard" no-padding>
                         <ion-item no-padding class="bodyMapItems">
-                            <img src="{{item.image}}" item-left class="smallImageBodyMap">
+                            <img no-padding src="{{item.image}}" item-left class="smallImageBodyMap">
                             <p class="paragraphTitle"><strong>{{item.name}}</strong></p>
                             <p>{{item.shortDesc}}</p>
                         </ion-item>
                     </ion-card>
-
-                    <!-- 
-                    <ion-card class="bodyMapCard" no-padding>
-                        <ion-item no-padding class="bodyMapItems">
-                            <img src="../../assets/imgs/zemra.png" item-left class="smallImageBodyMap">
-                            <p class="paragraphTitle"><strong>Zemra</strong></p>
-                        </ion-item>
-                    </ion-card>
-
-                    <ion-card class="bodyMapCard" no-padding>
-                        <ion-item no-padding class="bodyMapItems">
-                            <img src="../../assets/imgs/SyriRed.png" item-left class="smallImageBodyMap">
-                            <p class="paragraphTitle"><strong>Syri</strong></p>
-                        </ion-item>
-                    </ion-card>
-
-                    <ion-card class="bodyMapCard" no-padding>
-                        <ion-item no-padding class="bodyMapItems">
-                            <img src="../../assets/imgs/stomakRed.png" item-left class="smallImageBodyMap">
-                            <p class="paragraphTitle"><strong>Stomaku</strong></p>
-                        </ion-item>
-                    </ion-card>
-
-                    <ion-card class="bodyMapCard" no-padding>
-                        <ion-item no-padding class="bodyMapItems">
-                            <img src="../../assets/imgs/mushkriRed.png" item-left class="smallImageBodyMap">
-                            <p class="paragraphTitle"><strong>Mushkri</strong></p>
-                        </ion-item>
-                    </ion-card> -->
-
                 </ion-list>
-
             </ion-col>
-            <ion-col col-4></ion-col>
+            <ion-col col-4>
+                <!-- <ion-item> -->
+                <img src="../../assets/imgs/bodyRed.PNG" class="bodyImageBM">
+                <!-- </ion-item> -->
+            </ion-col>
         </ion-row>
     </ion-grid>
 
 </ion-content>
+
+
+<!-- 
+<ion-card class="bodyMapCard" no-padding>
+<ion-item no-padding class="bodyMapItems">
+<img src="../../assets/imgs/zemra.png" item-left class="smallImageBodyMap">
+<p class="paragraphTitle"><strong>Zemra</strong></p>
+</ion-item>
+</ion-card>
+
+<ion-card class="bodyMapCard" no-padding>
+<ion-item no-padding class="bodyMapItems">
+<img src="../../assets/imgs/SyriRed.png" item-left class="smallImageBodyMap">
+<p class="paragraphTitle"><strong>Syri</strong></p>
+</ion-item>
+</ion-card>
+
+<ion-card class="bodyMapCard" no-padding>
+<ion-item no-padding class="bodyMapItems">
+<img src="../../assets/imgs/stomakRed.png" item-left class="smallImageBodyMap">
+<p class="paragraphTitle"><strong>Stomaku</strong></p>
+</ion-item>
+</ion-card>
+
+<ion-card class="bodyMapCard" no-padding>
+<ion-item no-padding class="bodyMapItems">
+<img src="../../assets/imgs/mushkriRed.png" item-left class="smallImageBodyMap">
+<p class="paragraphTitle"><strong>Mushkri</strong></p>
+</ion-item>
+</ion-card> -->

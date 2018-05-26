@@ -8,4 +8,22 @@
     background-color: transparent;
     padding: 0px;
     margin: 0px;
+    border-radius: 25px;
+}
+
+.smallImageBodyMap {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 10px;
+}
+
+.bodyMapCard {
+    border-radius: 35px;
+    // background: transparent;
+}
+
+.paragraphTitle {
+    text-align: center;
+    float: center;
 }

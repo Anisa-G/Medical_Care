@@ -1,0 +1,48 @@
+{
+    "pjeset": [{
+        "organe": [{
+            "name": "Syri",
+            "shortDesc": "Syri ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDescription": "......."
+        }, {
+            "name": "Zemra",
+            "shortDesc": "Zemra ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        }, {
+            "name": "Stomaku",
+            "shortDesc": "Stomaku ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        }, {
+            "name": "Mushkrit",
+            "shortDesc": "Mushkrite ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        }]
+    }, {
+        "sisteme": [{
+            "name": "S nervor",
+            "shortDesc": "S nervor ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDescription": "......."
+        }, {
+            "name": "S qarkulli te gjakut",
+            "shortDesc": "S qarkulli te gjakut ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        }, {
+            "name": "S endokrin",
+            "shortDesc": "S endokrin ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        }, {
+            "name": "S ekzokrin",
+            "shortDesc": "S ekzokrin ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        }]
+    }]
+
+}

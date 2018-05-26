@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, ModalController } from 'ionic-angular';
-import { BodyMappingModalPage } from '../body-mapping-modal/body-mapping-modal';
+import { Component, Injectable } from '@angular/core';
+import { IonicPage } from 'ionic-angular';
+import 'rxjs/add/operator/map';
+import { Http } from '@angular/http';
+
 
 /**
  * Generated class for the BodyMappingPage page.
@@ -9,6 +11,7 @@ import { BodyMappingModalPage } from '../body-mapping-modal/body-mapping-modal';
  * Ionic pages and navigation.
  */
 
+@Injectable()
 @IonicPage()
 @Component({
   selector: 'page-body-mapping',
@@ -16,51 +19,35 @@ import { BodyMappingModalPage } from '../body-mapping-modal/body-mapping-modal';
 })
 export class BodyMappingPage {
 
-  private listOfPart: any = [];
+  // private listOfPart:any = [];
+  listOfPart: any[];
   private segment = 'organe';
 
-  constructor(private modalCtrl: ModalController) {
+
+
+  constructor(private http: Http) {
     this.changeBodyLevelToStart(this.segment);
   }
 
   changeBodyLevelToStart(value) {
-    this.segment = value;
-    if (this.segment === 'organe') {
-      this.listOfPart = this.organe;
-    } else if (this.segment === 'sisteme') {
-      this.listOfPart = this.sisteme;
+    if (value === 'organe') {
+      let localData = this.http.get("assets/json/organe_sisteme.json").map(res => res.json().pjeset[0].organe);
+      console.log(localData)
+      localData.subscribe(data => {
+        this.listOfPart = data;
+        // console.log(this.listOfPart)
+      });
+    } else if (value === 'sisteme') {
+      let localData = this.http.get("assets/json/organe_sisteme.json").map(res => res.json().pjeset[1].sisteme);
+      console.log(localData)
+      localData.subscribe(data => {
+        this.listOfPart = data;
+        // console.log(this.listOfPart)
+      });
     } else {
       console.log("There is an error ");
     }
 
   }
-
-  showModal() {
-
-    let modal = this.modalCtrl.create(BodyMappingModalPage, this.listOfPart);
-    modal.present();
-
-   }
-
-  organe = [
-    "Veshka",
-    "Melcia",
-    "Mushkrit",
-    "Zemra",
-    "Trakeja",
-    "Lekura"];
-
-
-  sisteme = [
-    "Sistemi qarkullimit te gjakut",
-    "Sistemi i tretjes ",
-    "Sisemi nervor",
-    "Sistemi frymkembimit"];
-
-
-
-
-
-
 
 }

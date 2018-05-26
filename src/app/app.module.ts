@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import {HttpModule} from '@angular/http';//import
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
@@ -15,7 +15,7 @@ import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
 import { FirebaseConfig } from './dbConfig';
-import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-modal';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-m
     BodyMappingPage,
     AllSymptomsPage,
     TreatmentPage,
-    BodyMappingModalPage
+    
   ],
   imports: [
     BrowserModule,
@@ -35,6 +35,7 @@ import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-m
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FirebaseConfig),
     AngularFireDatabaseModule,
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +47,7 @@ import { BodyMappingModalPage } from '../pages/body-mapping-modal/body-mapping-m
     BodyMappingPage,
     AllSymptomsPage,
     TreatmentPage,
-    BodyMappingModalPage
+    
   ],
   providers: [
     StatusBar,

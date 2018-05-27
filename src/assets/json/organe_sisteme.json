@@ -1,9 +1,9 @@
 {
     "pjeset": [{
         "organe": [{
-            "name": "Syri",
+            "name": "Truri",
             "shortDesc": "Syri ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/truRed.png",
             "longDescription": "......."
         }, {
             "name": "Zemra",
@@ -13,32 +13,55 @@
         }, {
             "name": "Stomaku",
             "shortDesc": "Stomaku ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/stomakRed.png",
             "longDesc": "......."
         }, {
-            "name": "Mushkrit",
+            "name": "Mushkëritë",
             "shortDesc": "Mushkrite ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/mushkriRed.png",
             "longDesc": "......."
-        }]
+        },
+        {
+            "name": "Veshkat",
+            "shortDesc": "Mushkrite ....",
+            "image": "../../assets/imgs/VeshkaRedMduket.png",
+            "longDesc": "......."
+        },
+        {
+            "name": "Mëlcia",
+            "shortDesc": "Mushkrite ....",
+            "image": "../../assets/imgs/idk_somethingRed.png",
+            "longDesc": "......."
+        }
+    ]
     }, {
         "sisteme": [{
-            "name": "S nervor",
+            "name": "Sistemi nervor",
             "shortDesc": "S nervor ....",
             "image": "../../assets/imgs/zemra.png",
             "longDescription": "......."
         }, {
-            "name": "S qarkulli te gjakut",
+            "name": "Sistemi tretes",
             "shortDesc": "S qarkulli te gjakut ....",
             "image": "../../assets/imgs/zemra.png",
             "longDesc": "......."
         }, {
-            "name": "S endokrin",
+            "name": "Sistemi endokrin",
             "shortDesc": "S endokrin ....",
             "image": "../../assets/imgs/zemra.png",
             "longDesc": "......."
         }, {
-            "name": "S ekzokrin",
+            "name": "Sistemi ekzokrin",
+            "shortDesc": "S ekzokrin ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        },{
+            "name": "Sistemi muskular",
+            "shortDesc": "S ekzokrin ....",
+            "image": "../../assets/imgs/zemra.png",
+            "longDesc": "......."
+        },{
+            "name": "Sistemi skeletal",
             "shortDesc": "S ekzokrin ....",
             "image": "../../assets/imgs/zemra.png",
             "longDesc": "......."

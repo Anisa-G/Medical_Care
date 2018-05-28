@@ -38,34 +38,34 @@
         "sisteme": [{
             "name": "Sistemi nervor",
             "shortDesc": "S nervor ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/nervous.png",
             "longDescription": "......."
         }, {
             "name": "Sistemi tretes",
             "shortDesc": "S qarkulli te gjakut ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/digestive.png",
             "longDesc": "......."
         }, {
             "name": "Sistemi endokrin",
             "shortDesc": "S endokrin ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/endocrine.png",
             "longDesc": "......."
         }, {
-            "name": "Sistemi ekzokrin",
+            "name": "Sistemi limfatike",
             "shortDesc": "S ekzokrin ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/lymphatic.png",
             "longDesc": "......."
         },{
             "name": "Sistemi muskular",
             "shortDesc": "S ekzokrin ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/muscular.png",
             "longDesc": "......."
         },{
             "name": "Sistemi skeletal",
             "shortDesc": "S ekzokrin ....",
-            "image": "../../assets/imgs/zemra.png",
+            "image": "../../assets/imgs/skeletal.png",
             "longDesc": "......."
         }]
     }]
-
+    
 }

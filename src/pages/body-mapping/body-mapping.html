@@ -21,7 +21,7 @@
         <ion-row>
             <ion-col col-8 no-padding>
                 <ion-list no-padding>
-                    <ion-card *ngFor="let item of listOfPart" class="bodyMapCard" no-padding>
+                    <ion-card *ngFor="let item of listOfPart" class="bodyMapCard" no-padding (click)="showNeededPart(item.name)">
                         <ion-item no-padding class="bodyMapItems">
                             <img no-padding src="{{item.image}}" item-left class="smallImageBodyMap">
                             <p class="paragraphTitle">{{item.name}}</p>

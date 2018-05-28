@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ListPage } from '../pages/list/list';
+import { InfopartPage } from '../pages/infopart/infopart';
 import { TreatmentPage } from '../pages/treatment/treatment';
 import { BodyMappingPage } from '../pages/body-mapping/body-mapping';
 import { AllSymptomsPage } from '../pages/all-symptoms/all-symptoms';
@@ -25,7 +26,7 @@ import { FirebaseConfig } from './dbConfig';
     BodyMappingPage,
     AllSymptomsPage,
     TreatmentPage,
-    
+    InfopartPage,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,7 @@ import { FirebaseConfig } from './dbConfig';
     BodyMappingPage,
     AllSymptomsPage,
     TreatmentPage,
-    
+    InfopartPage,
   ],
   providers: [
     StatusBar,

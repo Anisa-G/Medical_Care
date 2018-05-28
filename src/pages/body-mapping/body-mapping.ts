@@ -1,7 +1,8 @@
 import { Component, Injectable } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import { IonicPage, NavParams, NavController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import { Http } from '@angular/http';
+import { InfopartPage } from '../infopart/infopart';
 
 
 /**
@@ -25,7 +26,7 @@ export class BodyMappingPage {
 
 
 
-  constructor(private http: Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private http: Http) {
     this.changeBodyLevelToStart(this.segment);
   }
 
@@ -42,12 +43,27 @@ export class BodyMappingPage {
       console.log(localData)
       localData.subscribe(data => {
         this.listOfPart = data;
-        // console.log(this.listOfPart)
+
       });
     } else {
       console.log("There is an error ");
     }
 
+  }
+
+  showNeededPart(part) {
+    // console.log( this.findWithAttr(this.listOfPart,'name', part));
+    // console.log(this.listOfPart[this.findWithAttr(this.listOfPart, 'name', part)]);
+    this.navCtrl.push(InfopartPage, this.listOfPart[this.findWithAttr(this.listOfPart, 'name', part)]);
+  }
+
+  findWithAttr(array, attr, value) {
+    for (var i = 0; i < array.length; i += 1) {
+      if (array[i][attr] === value) {
+        return i;
+      }
+    }
+    return -1;
   }
 
 }

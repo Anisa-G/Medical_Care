@@ -4,21 +4,25 @@
             "name": "Truri",
             "shortDesc": "Syri ....",
             "image": "../../assets/imgs/truRed.png",
+            "imageSide1" :"../../assets/imgs/mappingOrgans/tru_anesore.jpg",
             "longDescription": "......."
         }, {
             "name": "Zemra",
-            "shortDesc": "Zemra ....",
+            "shortDesc": "Zemra eshte organi qe pompon gjak ne trupin e njeriut ",
             "image": "../../assets/imgs/zemra.png",
-            "longDesc": "......."
+            "imageSide1" :"../../assets/imgs/mappingOrgans/zemra_cutout.jpg",
+            "longDesc": " Pa zemren nuk jeton njeriu"
         }, {
             "name": "Stomaku",
             "shortDesc": "Stomaku ....",
             "image": "../../assets/imgs/stomakRed.png",
+            "imageSide1" :"../../assets/imgs/mappingOrgans/stomaku_cutout.jpg",
             "longDesc": "......."
         }, {
             "name": "Mushkëritë",
             "shortDesc": "Mushkrite ....",
             "image": "../../assets/imgs/mushkriRed.png",
+            "imageSide1" :"../../assets/imgs/mappingOrgans/mushkeri_front.jpg",
             "longDesc": "......."
         },
         {
@@ -55,6 +59,7 @@
             "shortDesc": "S ekzokrin ....",
             "image": "../../assets/imgs/lymphatic.png",
             "longDesc": "......."
+
         },{
             "name": "Sistemi muskular",
             "shortDesc": "S ekzokrin ....",

@@ -2,40 +2,40 @@
     "pjeset": [{
         "organe": [{
             "name": "Truri",
-            "shortDesc": "Syri ....",
+            "shortDesc": "Truri eshte ne kokë. ",
             "image": "../../assets/imgs/truRed.png",
             "imageSide1" :"../../assets/imgs/mappingOrgans/tru_anesore.jpg",
-            "longDescription": "......."
+            "longDescription": "Pa trurin nuk jeton njeriu."
         }, {
             "name": "Zemra",
             "shortDesc": "Zemra eshte organi qe pompon gjak ne trupin e njeriut ",
             "image": "../../assets/imgs/zemra.png",
             "imageSide1" :"../../assets/imgs/mappingOrgans/zemra_cutout.jpg",
-            "longDesc": " Pa zemren nuk jeton njeriu"
+            "longDesc": "Pa zemrën nuk jeton njeriu."
         }, {
             "name": "Stomaku",
-            "shortDesc": "Stomaku ....",
+            "shortDesc": "Stomaku ndodhet ne bark,",
             "image": "../../assets/imgs/stomakRed.png",
             "imageSide1" :"../../assets/imgs/mappingOrgans/stomaku_cutout.jpg",
-            "longDesc": "......."
+            "longDesc": "Pa stomakun nuk jeton njeriu"
         }, {
             "name": "Mushkëritë",
-            "shortDesc": "Mushkrite ....",
+            "shortDesc": "Mushkëritë ndodhen ne kraharor.",
             "image": "../../assets/imgs/mushkriRed.png",
             "imageSide1" :"../../assets/imgs/mappingOrgans/mushkeri_front.jpg",
-            "longDesc": "......."
+            "longDesc": "Pa mushkëritë nuk jeton njeriu."
         },
         {
-            "name": "Veshkat",
-            "shortDesc": "Mushkrite ....",
+            "name": "Veshka",
+            "shortDesc": "Veshka ndodhet ne legen.",
             "image": "../../assets/imgs/VeshkaRedMduket.png",
-            "longDesc": "......."
+            "longDesc": "Pa veshken nuk jeton njeriu."
         },
         {
             "name": "Mëlcia",
-            "shortDesc": "Mushkrite ....",
+            "shortDesc": "Mëlcia ndodhet ne bark",
             "image": "../../assets/imgs/idk_somethingRed.png",
-            "longDesc": "......."
+            "longDesc": "Pa mëlcine nuk jeton njeriu."
         }
     ]
     }, {

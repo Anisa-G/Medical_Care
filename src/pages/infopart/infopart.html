@@ -1,13 +1,19 @@
+<ion-header>
+    <ion-navbar>
+
+    </ion-navbar>
+</ion-header>
+
 <ion-content>
     <ion-card>
-        <img src="{{singleBodyPart.image}}" />
+        <img src="{{singleBodyPart.imageSide1}}" />
         <ion-card-content>
             <ion-card-title>
                 {{singleBodyPart.name}}
             </ion-card-title>
             <p>{{singleBodyPart.shortDesc}}</p>
             <p>
-                {{singleBodyPart.longDescription}}
+                {{singleBodyPart.longDesc}} {{singleBodyPart.other}}
             </p>
         </ion-card-content>
     </ion-card>

@@ -26,10 +26,7 @@
                     <ion-item>
                         <ion-label class="optionLab">Qytete</ion-label>
                         <ion-select class="optionSel" [(ngModel)]="qytete" interface="popover">
-                            <ion-option [selected]="true" value="tirana">Tirana</ion-option>
-                            <ion-option value="durresi">Durresi</ion-option>
-                            <ion-option value="berati">Berati</ion-option>
-                            <ion-option value="korca">Korca</ion-option>
+                            <ion-option value="item" *ngFor="let item of listOfQytete">{{item[0]}}</ion-option>
                         </ion-select>
                     </ion-item>
                 </ion-card>
@@ -39,10 +36,7 @@
                     <ion-item>
                         <ion-label class="optionLab">Spitale</ion-label>
                         <ion-select class="optionSel" [(ngModel)]="spitale" interface="popover">
-                            <ion-option [selected]="true" value="Kardiologjia">Kardiologjia</ion-option>
-                            <ion-option value="Ortopedia">Ortopedia</ion-option>
-                            <ion-option value="emergjnca">Emergjenca</ion-option>
-                            <ion-option value="materniteti">Materniteti</ion-option>
+                            <!-- <ion-option value="item" *ngFor="let item of listOfQytete">{{item}}</ion-option> -->
                         </ion-select>
                     </ion-item>
                 </ion-card>
@@ -52,10 +46,8 @@
                     <ion-item>
                         <ion-label class="optionLab">Departamenti</ion-label>
                         <ion-select class="optionSel" [(ngModel)]="departament" interface="popover">
-                            <ion-option [selected]="true" value="Kardiologjia">Kardiologjia</ion-option>
-                            <ion-option value="Ortopedia">Ortopedia</ion-option>
-                            <ion-option value="emergjnca">Emergjenca</ion-option>
-                            <ion-option value="materniteti">Materniteti</ion-option>
+                            <ion-option [selected]="true"></ion-option>
+
                         </ion-select>
                     </ion-item>
                 </ion-card>

@@ -1,0 +1,63 @@
+{
+    "Spitale": [{
+
+        "Tirana": [{
+            "Nene Tereza": [{
+                "Ortopedia": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }],
+            "Ushraraku": [{
+                "Emergjenca": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }]
+        }],
+        "Durres": [{
+            "Nene Tereza": [{
+                "Ortopedia": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }],
+            "Ushraraku": [{
+                "Emergjenca": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }]
+        }],
+        "Berat": [{
+            "Nene Tereza": [{
+                "Ortopedia": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }],
+            "Ushraraku": [{
+                "Emergjenca": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }]
+        }],
+
+        "Diber": [{
+            "Spitali Rajonal": [{
+                "": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }],
+            "Ushraraku": [{
+                "Emergjenca": [{
+                    "lat": "",
+                    "lond": ""
+                }]
+            }]
+        }]
+
+    }]
+}

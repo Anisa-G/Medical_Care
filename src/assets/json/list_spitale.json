@@ -1,63 +1,77 @@
 {
-    "Spitale": [{
+    "qytete": [{
+        "sName": "Spitale",
+        "Spitale": [{
+            "name": "Tirana",
+            "departament": [{
+                "dName": "Kardjologjia",
+                "pos": {
+                    "lat": "45.6585",
+                    "lond": "45.86"
+                }
+            }, {
+                "dName": "Ortopedia",
+                "pos": {
+                    "lat": "45.6885",
+                    "lond": "45.86"
+                }
+            }, {
+                "dName": "Sh. shpejd",
+                "pos": {
+                    "lat": "45.6685",
+                    "lond": "45.86"
+                }
+            }]
 
-        "Tirana": [{
-            "Nene Tereza": [{
-                "Ortopedia": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }],
-            "Ushraraku": [{
-                "Emergjenca": [{
-                    "lat": "",
-                    "lond": ""
-                }]
+        }, {
+            "name": "Durres",
+            "departament": [{
+                "dName": "Kardjologjia",
+                "pos": {
+                    "lat": "45.65952",
+                    "lond": "45.8669"
+                }
+            }, {
+                "dName": "Ortopedia",
+                "pos": {
+                    "lat": "47.6885",
+                    "lond": "45.86"
+                }
+            }, {
+                "dName": "Sh. shpejd",
+                "pos": {
+                    "lat": "45.7685",
+                    "lond": "45.86"
+                }
             }]
-        }],
-        "Durres": [{
-            "Nene Tereza": [{
-                "Ortopedia": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }],
-            "Ushraraku": [{
-                "Emergjenca": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }]
-        }],
-        "Berat": [{
-            "Nene Tereza": [{
-                "Ortopedia": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }],
-            "Ushraraku": [{
-                "Emergjenca": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }]
-        }],
 
-        "Diber": [{
-            "Spitali Rajonal": [{
-                "": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }],
-            "Ushraraku": [{
-                "Emergjenca": [{
-                    "lat": "",
-                    "lond": ""
-                }]
-            }]
         }]
+    }, {
+        "sName": "Klinika",
+        "Spitale": [{
+            "name": "Tirana",
+            "departament": [{
+                "dName": "Kardjologjia",
+                "pos": {
+                    "lat": "45.6585",
+                    "lond": "45.86"
+                }
+            }, {
+                "dName": "Ortopedia",
+                "pos": {
+                    "lat": "45.6885",
+                    "lond": "45.86"
+                }
+            }, {
+                "dName": "Sh. shpejd",
+                "pos": {
+                    "lat": "45.6685",
+                    "lond": "45.86"
+                }
+            }]
 
+        }]
     }]
+
+
 }

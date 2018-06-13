@@ -21,58 +21,53 @@
             </ion-col>
         </ion-row>
         <ion-row no-padding>
+
             <ion-col no-padding col-12>
                 <ion-card no-padding class="listItem">
                     <ion-item>
-                        <ion-label class="optionLab">Qytete</ion-label>
-                        <ion-select class="optionSel" [(ngModel)]="qytete" interface="popover" (ionChange)="optionSpitale(qytete)">
+                        <ion-label class="optionLab">Lloje</ion-label>
+                        <ion-select class="optionSel" [(ngModel)]="qytete" interface="popover" (ionChange)="optionLloje(qytete)">
                             <ion-option value="Spitale">Spitale</ion-option>
                             <ion-option value="Kilinika">Kilinika</ion-option>
                         </ion-select>
                     </ion-item>
                 </ion-card>
             </ion-col>
+
             <ion-col no-padding col-12>
                 <ion-card no-padding class="listItem">
                     <ion-item>
-                        <ion-label class="optionLab">Spitale</ion-label>
-                        <ion-select class="optionSel" [(ngModel)]="spitale" interface="popover" (ionChange)="optionSpitale(spitale)">
-                            <ion-option value="item" *ngFor="let item of listOfSpitale">{{item.name}}</ion-option>
+                        <ion-label class="optionLab">Qytete</ion-label>
+                        <ion-select class="optionSel" [(ngModel)]="spitale" interface="popover" (ionChange)="optionQytete(spitale)">
+                            <ion-option value="{{item.name}}" *ngFor="let item of listOfSpitale">{{item.name}}</ion-option>
                         </ion-select>
                     </ion-item>
                 </ion-card>
             </ion-col>
+
             <ion-col no-padding col-12>
                 <ion-card no-padding class="listItem">
                     <ion-item>
                         <ion-label class="optionLab">Departamenti</ion-label>
-                        <ion-select class="optionSel" [(ngModel)]="departament" interface="popover" (ionChange)="optionQytete(departament)">
-                            <ion-option value="item" *ngFor="let item of listOfSpitale">{{item.dName}}</ion-option>
+                        <ion-select class="optionSel" [(ngModel)]="departament" interface="popover" (ionChange)="optionPos(departament)">
+                            <ion-option value="{{item.dName}}" *ngFor="let item of listOfDepatamente">{{item.dName}}</ion-option>
                         </ion-select>
                     </ion-item>
                 </ion-card>
             </ion-col>
+
         </ion-row>
     </ion-grid>
 
     <ion-grid>
         <ion-row no-padding>
-            <ion-col col-3></ion-col>
-            <ion-col no-padding col-6>
-                <button no-padding class="filterButton" ion-item>Filtro</button>
+            <ion-col col-2></ion-col>
+            <ion-col no-padding col-8>
+                <button no-padding class="filterButton" ion-item (click)="goToMap()">Shko ne Hart</button>
             </ion-col>
-            <ion-col col-3></ion-col>
+            <ion-col col-2></ion-col>
         </ion-row>
-        <ion-row>
-            <p></p>
-        </ion-row>
-        <ion-row no-padding>
-            <ion-col col-1></ion-col>
-            <ion-col no-padding col-10>
-                <button no-padding class="showAllButton" ion-item>Shfaq te gjitha</button>
-            </ion-col>
-            <ion-col col-1></ion-col>
-        </ion-row>
+
     </ion-grid>
 
 </ion-content>

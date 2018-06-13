@@ -6,20 +6,20 @@
             "departament": [{
                 "dName": "Kardjologjia",
                 "pos": {
-                    "lat": "45.6585",
-                    "lond": "45.86"
+                    "lat": 45.6585,
+                    "lng": 45.86
                 }
             }, {
                 "dName": "Ortopedia",
                 "pos": {
-                    "lat": "45.6885",
-                    "lond": "45.86"
+                    "lat": 45.6885,
+                    "lng": 45.86
                 }
             }, {
                 "dName": "Sh. shpejd",
                 "pos": {
-                    "lat": "45.6685",
-                    "lond": "45.86"
+                    "lat": 45.6685,
+                    "lng": 45.86
                 }
             }]
 
@@ -28,45 +28,45 @@
             "departament": [{
                 "dName": "Kardjologjia",
                 "pos": {
-                    "lat": "45.65952",
-                    "lond": "45.8669"
+                    "lat": 45.65952,
+                    "lng": 45.8669
                 }
             }, {
                 "dName": "Ortopedia",
                 "pos": {
-                    "lat": "47.6885",
-                    "lond": "45.86"
+                    "lat": 47.6885,
+                    "lng": 45.86
                 }
             }, {
                 "dName": "Sh. shpejd",
                 "pos": {
-                    "lat": "45.7685",
-                    "lond": "45.86"
+                    "lat": 45.7685,
+                    "lng": 45.86
                 }
             }]
 
         }]
     }, {
-        "sName": "Klinika",
-        "Spitale": [{
+        "sName": "Kilinika",
+        "Kilinika": [{
             "name": "Tirana",
             "departament": [{
                 "dName": "Kardjologjia",
                 "pos": {
-                    "lat": "45.6585",
-                    "lond": "45.86"
+                    "lat": 45.6585,
+                    "lng": 45.86
                 }
             }, {
                 "dName": "Ortopedia",
                 "pos": {
-                    "lat": "45.6885",
-                    "lond": "45.86"
+                    "lat": 45.6885,
+                    "lng": 45.86
                 }
             }, {
                 "dName": "Sh. shpejd",
                 "pos": {
-                    "lat": "45.6685",
-                    "lond": "45.86"
+                    "lat": 45.6685,
+                    "lng": 45.8
                 }
             }]
 

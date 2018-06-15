@@ -35,7 +35,7 @@ export class HospitalMapPage {
     });
     infoWindow = new google.maps.InfoWindow;
 
-    this.image = 'assets/imgs/marker.png'
+    this.image = 'assets/imgs/marker12x17.png'
     var marker = new google.maps.Marker({
       position: location,
       icon: this.image,

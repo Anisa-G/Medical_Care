@@ -12,28 +12,51 @@ export class ListPage {
 
   listOfSpitale: any[];
   listOfDepatamente: any[];
-  pos:any = {};;
+  pos: any = {};
+  sName: string = "Spitale";
+  dName: string = "";
+  position: string = "";
+
 
   constructor(public navParams: NavParams, private http: Http, private navCtrl: NavController) {
-    this.reloadData();
+    this.reloadDataSpitale(this.sName);
   }
 
-  optionQytete(item) {
-    this.listOfDepatamente = this.listOfDepatamente[this.findWithAttr(this.listOfDepatamente, "name", item)]["departament"];
-    console.log(this.listOfDepatamente)
-    
+  optionQytete(dName) {
+    this.dName = dName;
+    this.reloadDataDeparment(dName);
+
   }
 
-  optionLloje(item) {
-    this.listOfSpitale = this.listOfSpitale[this.findWithAttr(this.listOfSpitale, "sName", item)][item];
-    this.listOfDepatamente = this.listOfSpitale;
+  optionLloje(sName) {
+    this.sName = sName;
+    this.reloadDataSpitale(sName);
   }
 
-  optionPos(item) {
-    this.pos = this.listOfDepatamente[this.findWithAttr(this.listOfDepatamente, "dName", item)]["pos"];
-    console.log(this.pos)
+  optionPos(pos) {
+    this.position = pos;
+    this.pos = this.listOfDepatamente[this.findWithAttr(this.listOfDepatamente, "dName", this.position)]["pos"];
   }
 
+
+  reloadDataSpitale(sName) {
+    let localData = this.http.get("assets/json/list_spitale.json").map(res => res.json());
+    localData.subscribe(data => {
+      this.listOfSpitale = data.qytete;
+      this.listOfSpitale = this.listOfSpitale[this.findWithAttr(this.listOfSpitale, "sName", sName)][sName];
+    });
+  }
+
+  reloadDataDeparment(dName) {
+
+    let localData = this.http.get("assets/json/list_spitale.json").map(res => res.json());
+    localData.subscribe(data => {
+      this.listOfSpitale = data.qytete;
+      this.listOfSpitale = this.listOfSpitale[this.findWithAttr(this.listOfSpitale, "sName", this.sName)][this.sName];
+      this.listOfDepatamente = this.listOfSpitale[this.findWithAttr(this.listOfSpitale, "name", dName)]["departament"];
+    });
+  }
+  
   findWithAttr(array, attr, value) {
     for (var i = 0; i < array.length; i += 1) {
       if (array[i][attr] === value) {
@@ -43,17 +66,9 @@ export class ListPage {
     return -1;
   }
 
-  reloadData(){
-    let localData = this.http.get("assets/json/list_spitale.json").map(res => res.json());
-    localData.subscribe(data => {
-      this.listOfSpitale = data.qytete;
-    });
-    
+  goToMap() {
+    this.navCtrl.push(HospitalMapPage, this.pos);
   }
 
-  goToMap(){
-    this.navCtrl.push(HospitalMapPage,this.pos);
-  }
 
 }
-

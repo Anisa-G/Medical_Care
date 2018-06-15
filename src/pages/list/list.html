@@ -27,7 +27,7 @@
                     <ion-item>
                         <ion-label class="optionLab">Lloje</ion-label>
                         <ion-select class="optionSel" [(ngModel)]="qytete" interface="popover" (ionChange)="optionLloje(qytete)">
-                            <ion-option value="Spitale">Spitale</ion-option>
+                            <ion-option [selected]="true" value="Spitale">Spitale</ion-option>
                             <ion-option value="Kilinika">Kilinika</ion-option>
                         </ion-select>
                     </ion-item>

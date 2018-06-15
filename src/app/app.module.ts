@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { HospitalMapPage } from '../pages/hospital-map/hospital-map';
 import { ListPage } from '../pages/list/list';
 import { InfopartPage } from '../pages/infopart/infopart';
+import { ShowCureForDeseasePage } from '../pages/show-cure-for-desease/show-cure-for-desease';
 import { ShowInfoDeseasePage } from '../pages/show-info-desease/show-info-desease';
 import { ContactUsPage } from '../pages/contact-us/contact-us';
 import { ListOfTreatmentDeseasePage } from '../pages/list-of-treatment-desease/list-of-treatment-desease';
@@ -33,6 +34,7 @@ import { FirebaseConfig } from './dbConfig';
     ShowInfoDeseasePage,
     ListOfTreatmentDeseasePage,
     ContactUsPage,
+    ShowCureForDeseasePage
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,7 @@ import { FirebaseConfig } from './dbConfig';
     ShowInfoDeseasePage,
     ListOfTreatmentDeseasePage,
     ContactUsPage,
+    ShowCureForDeseasePage
   ],
   providers: [
     StatusBar,

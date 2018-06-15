@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
+import {ShowCureForDeseasePage} from '../show-cure-for-desease/show-cure-for-desease';
 
-/**
- * Generated class for the ListOfTreatmentDeseasePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -30,7 +25,7 @@ export class ListOfTreatmentDeseasePage {
   showInfoDesease(name) {
     console.log(name)
     // console.log(this.listOfDeseases[this.findWithAttr(this.listOfDeseases, 'sName', name)])
-    // this.navCtrl.push(ShowInfoDeseasePage, this.listOfDeseases[this.findWithAttr(this.listOfDeseases, 'sName', name)]);
+    this.navCtrl.push(ShowCureForDeseasePage, this.listOfDeseases[this.findWithAttr(this.listOfDeseases, 'sName', name)]);
   }
 
 

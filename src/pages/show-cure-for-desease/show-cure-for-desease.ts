@@ -15,11 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ShowCureForDeseasePage {
 
+  singleBodyPart:any = {};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.singleBodyPart = this.navParams.data;
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ShowCureForDeseasePage');
-  }
 
 }

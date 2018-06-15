@@ -21,6 +21,7 @@ export class ListPage {
   optionQytete(item) {
     this.listOfDepatamente = this.listOfDepatamente[this.findWithAttr(this.listOfDepatamente, "name", item)]["departament"];
     console.log(this.listOfDepatamente)
+    
   }
 
   optionLloje(item) {

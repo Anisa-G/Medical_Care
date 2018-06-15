@@ -15,9 +15,9 @@
         <ion-row>
             <ion-col col-12 no-padding>
                 <ion-list no-padding>
-                    <ion-card *ngFor="let item of listOfDeseases" class="deseasesCard" no-padding>
+                    <ion-card *ngFor="let item of listOfDeseases" class="deseasesCard" no-padding (click)="showInfoDesease(item.sName)">
                         <ion-item no-padding class="desItems">
-                            <h6>{{item.sName}}</h6>
+                            <h6 class="nameDesease">{{item.sName}}</h6>
                             <img no-padding src="{{item.sImg}}" item-left class="smallImageDes">
                             <p class="paragraphTitle">{{item.shortDesc}}</p>
                         </ion-item>

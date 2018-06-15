@@ -4,19 +4,23 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
-    <ion-card>
+<ion-content class="contentClass" no-padding>
 
-        <img src="{{singleBodyPart.image}}" />
-
+    <ion-card class="infoDes">
+        <img class="mainImageView" src="{{singleBodyPart.image}}" />
         <ion-card-content>
             <ion-card-title>
                 {{singleBodyPart.name}}
             </ion-card-title>
-            <p>{{singleBodyPart.shortDesc}}</p>
-            <p>
-                {{singleBodyPart.longDesc}} {{singleBodyPart.other}}
-            </p>
+            <ion-item class="infoDes">
+                <h5>Pershkrim i shkurter</h5>
+                <p class="paragraphDescr">{{singleBodyPart.shortDesc}}</p>
+            </ion-item>
+            <ion-item class="infoDes">
+                <h5>Pershkrim i gjate</h5>
+                <p class="paragraphDescr"> {{singleBodyPart.longDesc}}</p>
+            </ion-item>
+
         </ion-card-content>
     </ion-card>
 </ion-content>

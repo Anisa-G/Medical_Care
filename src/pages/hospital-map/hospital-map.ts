@@ -35,15 +35,12 @@ export class HospitalMapPage {
     });
     infoWindow = new google.maps.InfoWindow;
 
-    this.image = 'assets/imgs/marker12x17.png'
+    this.image = '../assets/imgs/marker12x17.png'
     var marker = new google.maps.Marker({
       position: location,
       icon: this.image,
       map: map
     });
-    var directionsDisplay = new google.maps.DirectionsRenderer({
-      map: map
-    });
-    var directionsService = new google.maps.DirectionsService();
+   
   }
 }

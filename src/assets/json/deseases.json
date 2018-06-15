@@ -1,0 +1,38 @@
+{
+    "trajnimi": [
+        {
+            "Semundjet": [
+                {
+                    "sName": "Infarkti i zemrës",
+                    "sDesc": "Infarkti i zemrës shfaqet si pasojë e bllokimit të enëve të gjakut qe furnizojnë muskulin e zemrës me gjak (Tromboza , Embolia). Si pasojë , shfaqen çrregullime të rënda në punën e zemrës , indi i zemrës vdes dhe të rrahurat e saj ndalen plotësisht. Faktorët që rrezikojnë punën normale të zemrës janë : mosaktiviteti fizik i organizmit , streset e ndryshme psikike , puna e rëndë fizike , pushimi i pamjaftueshëm , pirja e duhanit , alkoolit etj.",
+                    "sImg": "../../assets/imgs/zemra.png",
+                    "shortDesc": "Infarkti i zemrës shfaqet si pasojë e bllokimit të enëve të gjakut."
+                },
+                {
+                    "sName": "Aritmia",
+                    "sDesc": "Kjo njihet ndryshe si ritmi i çrregullt i rrahjeve të zemrës. Ato shkaktohen nga ndryshimi i punës së ritmit të zemrës, ose nga çrregullimet e tejçimit të nxitjes së zemrës. Rrahjet e zemrës në një ritëm më të lartë se 100 për minutë njihen si takikardi. Në këtë rast pjesët përbërëse të këtij organi nuk punojnë njësoj ndaj dhe puna e zemrës çorientohet.",
+                    "sImg": "../../assets/imgs/zemra.png",
+                    "shortDesc": "Kjo njihet ndryshe si ritmi i çrregullt i rrahjeve të zemrës."
+                },
+                {
+                    "sName": "Sepsis",
+                    "sDesc": "Sistemi imun i trupit pushtohet nga një infeksion dhe shkakton inflamacion dhe bllokim të veshkave. Kjo zakonisht nuk ndodh në rastin e infeksioneve të traktit urinar.",
+                    "sImg": "../../assets/imgs/VeshkaRedMduket.png",
+                    "shortDesc": "Sistemi imun i trupit pushtohet nga një infeksion dhe shkakton inflamacion dhe bllokim të veshkave."
+                },
+                {
+                    "sName": "Rabdomioliza",
+                    "sDesc": "Kjo është një situatë në të cilën kemi një bllokim të konsiderueshëm të muskujve në trup dhe fibrat e dëmtuara të muskujve bllokojnë sistemin filtrues të veshkave. Kjo ndodh për shkak të ndonjë traume, dëmtimeve nga një aksident dhe nga djegiet. Disa medikamente të përdorura për të trajtuar kolesterolin e lartë mund ta shkaktojnë këtë gjendje.",
+                    "sImg": "../../assets/imgs/VeshkaRedMduket.png",
+                    "shortDesc": "Bllokim të konsiderueshëm të muskujve në trup dhe fibrat e dëmtuara të muskujve bllokojnë sistemin filtrues të veshkavet"
+                },
+                {
+                    "sName": "Glomerulonefriti",
+                    "sDesc": "Janë të shumta sëmundjet që e shkaktojnë këtë inflamacion, si eritematoza sistemike lupus, granulomatoza Ëegener dhe sindroma Goodpastu.",
+                    "sImg": "../../assets/imgs/VeshkaRedMduket.png",
+                    "shortDesc": "Janë të shumta sëmundjet që e shkaktojnë këtë inflamacion, si eritematoza sistemike lupus, granulomatoza Ëegener dhe sindroma Goodpastu."
+                }
+            ]
+        }
+    ]
+}

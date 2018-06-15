@@ -10,8 +10,6 @@ import { HospitalMapPage } from '../hospital-map/hospital-map';
 })
 export class ListPage {
 
-
-
   listOfSpitale: any[];
   listOfDepatamente: any[];
   pos:any = {};;
@@ -19,8 +17,6 @@ export class ListPage {
   constructor(public navParams: NavParams, private http: Http, private navCtrl: NavController) {
     this.reloadData();
   }
-
-  // this.findWithAttr(this.listOfPart, 'name', part)
 
   optionQytete(item) {
     this.listOfDepatamente = this.listOfDepatamente[this.findWithAttr(this.listOfDepatamente, "name", item)]["departament"];

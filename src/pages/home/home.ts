@@ -28,7 +28,7 @@ export class HomePage {
     this.navCtrl.push(AllSymptomsPage);
   }
 
-  goToThreatment(){
+  goToDeseases(){
     this.navCtrl.push(TreatmentPage);
   }
 

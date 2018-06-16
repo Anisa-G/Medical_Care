@@ -1,9 +1,3 @@
-<!--
-  Generated template for the AllSymptomsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
     <ion-navbar>
         <ion-title>Simptomat</ion-title>
@@ -18,7 +12,7 @@
             <h2 class="slide-title">
                 Informacjon i pergjthshem
             </h2>
-            <ion-input col-8 type="text" placeholder="Mosha" aria-required="true" center></ion-input>
+            <ion-input #age col-8 type="number" placeholder="Mosha" aria-required="true" center></ion-input>
             <ion-row>
                 <ion-col col-md-6>
                     <button ion-button outline>
@@ -35,22 +29,22 @@
 
         <ion-slide>
             <h2 class="slide-title">Pershkruaj Semundjen</h2>
-            <ion-input col-10 placeholder="P.Sh dhimbje koke"></ion-input>
+            <ion-input #descDesesase col-10 placeholder="P.Sh dhimbje koke"></ion-input>
         </ion-slide>
 
         <ion-slide>
             <h2 class="slide-title">Pershkruaj Mjekimet</h2>
             <ion-label>Mjekimi i tanishem</ion-label>
-            <ion-input col-8 placeholder="P.Sh ..."></ion-input>
+            <ion-input #medication col-8 placeholder="P.Sh ..."></ion-input>
             <br/>
             <ion-label>Mjekimi i meparshem</ion-label>
-            <ion-input col-8 placeholder="P.Sh ..."></ion-input>
+            <ion-input #prevMedication col-8 placeholder="P.Sh ..."></ion-input>
         </ion-slide>
 
 
         <ion-slide>
             <ion-label>Gjendja e tanishme</ion-label>
-            <ion-input col-8 placeholder="P.Sh ..."></ion-input>
+            <ion-input #nowState col-8 placeholder="P.Sh ..."></ion-input>
         </ion-slide>
 
         <ion-slide>

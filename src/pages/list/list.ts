@@ -79,7 +79,7 @@ export class ListPage {
 
   private presentToase() {
     let toast = this.toastCtrl.create({
-      message: "Zgjidhni nje vendodhje me perpara!",
+      message: "Zgjidhni nje vendodhje!",
       duration: 3000,
       position: 'bottom'
     });

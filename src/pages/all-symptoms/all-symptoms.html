@@ -15,12 +15,12 @@
             <ion-input #age col-8 type="number" placeholder="Mosha" aria-required="true" center></ion-input>
             <ion-row>
                 <ion-col col-md-6>
-                    <button ion-button outline>
+                    <button ion-button outline (click)="goNext('mashkull')">
                         Mashkull
                     </button>
                 </ion-col>
                 <ion-col col-md-6>
-                    <button ion-button outline>
+                    <button ion-button outline >
                         Femer
                     </button>
                 </ion-col>
@@ -30,6 +30,8 @@
         <ion-slide>
             <h2 class="slide-title">Pershkruaj semundjen</h2>
             <ion-input #descDesesase col-10 placeholder="P.Sh dhimbje koke"></ion-input>
+
+            
         </ion-slide>
 
         <ion-slide>
@@ -51,7 +53,7 @@
             <h2 class="slide-title">Gjej semundjen</h2>
             <button ion-button icon-end large clear>
             Vazhdo
-            <ion-icon name="arrow-forward"></ion-icon>
+            <ion-icon name="arrow-forward" (click)="showDesease()"></ion-icon>
             </button>
         </ion-slide>
 

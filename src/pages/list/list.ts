@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavParams, NavController } from 'ionic-angular';
+import { NavParams, NavController, ToastController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import { Http } from '@angular/http';
 import { HospitalMapPage } from '../hospital-map/hospital-map';
+import { isEmpty } from '@firebase/util';
 
 @Component({
   selector: 'page-list',
@@ -18,7 +19,7 @@ export class ListPage {
   position: string = "";
 
 
-  constructor(public navParams: NavParams, private http: Http, private navCtrl: NavController) {
+  constructor(public navParams: NavParams, private http: Http, private navCtrl: NavController, private toastCtrl: ToastController) {
     this.reloadDataSpitale(this.sName);
   }
 
@@ -56,7 +57,7 @@ export class ListPage {
       this.listOfDepatamente = this.listOfSpitale[this.findWithAttr(this.listOfSpitale, "name", dName)]["departament"];
     });
   }
-  
+
   findWithAttr(array, attr, value) {
     for (var i = 0; i < array.length; i += 1) {
       if (array[i][attr] === value) {
@@ -67,8 +68,25 @@ export class ListPage {
   }
 
   goToMap() {
-    this.navCtrl.push(HospitalMapPage, this.pos);
+    console.log(this.pos);
+
+    if (!isEmpty(this.pos)) {
+      this.navCtrl.push(HospitalMapPage, this.pos);
+    } else {
+      this.presentToase();
+    }
   }
 
+  private presentToase() {
+    let toast = this.toastCtrl.create({
+      message: "Zgjidhni nje vendodhje me perpara!",
+      duration: 3000,
+      position: 'bottom'
+    });
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+    toast.present();
+  }
 
 }

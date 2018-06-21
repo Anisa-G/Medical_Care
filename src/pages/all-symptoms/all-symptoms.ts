@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, Slides } from 'ionic-angular';
+import { IonicPage, NavController, Slides, ToastController } from 'ionic-angular';
+import { isEmpty } from '@firebase/util';
 
 @IonicPage()
 @Component({
@@ -17,7 +18,7 @@ export class AllSymptomsPage {
   @ViewChild('prevMedication') prevMedication;
   @ViewChild('nowState') nowState;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private toastCtrl: ToastController) {
    
 
   }
@@ -26,6 +27,28 @@ export class AllSymptomsPage {
     slider.lockSwipes(false)
   }
 
+  showDesease(){
+    if (isEmpty(this.age.value) || isEmpty(this.descDesesase.value) ||
+      isEmpty(this.medication.value) ||isEmpty(this.prevMedication.value)
+      || isEmpty(this.nowState.value)) {
+      this.presentToast("Ju lutem mbushni hapsirat")
+    }else{
+      this.presentToast("Nuk u gjend asnje informacjon mbi semundjen tuaj!")
+    }
+  }
+    presentToast(message){
+      let toast = this.toastCtrl.create({
+        message: message,
+        duration: 3000,
+        position: 'bottom'
+      });
+  
+      toast.onDidDismiss(() => {
+        console.log('Dismissed toast');
+      });
+  
+      toast.present();
+    }
 
 
 

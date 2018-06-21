@@ -19,7 +19,11 @@ export class AllSymptomsPage {
   @ViewChild('nowState') nowState;
 
   constructor(public navCtrl: NavController, private toastCtrl: ToastController) {
-   
+   this.age = ""
+   this.descDesesase = ""
+   this.medication = ""
+   this.prevMedication = ""
+   this.nowState = ""
 
   }
 
@@ -35,6 +39,8 @@ export class AllSymptomsPage {
     }else{
       this.presentToast("Nuk u gjend asnje informacjon mbi semundjen tuaj!")
     }
+    console.log("Clicking");
+    
   }
     presentToast(message){
       let toast = this.toastCtrl.create({

@@ -21,9 +21,9 @@ export class ContactUsPage {
   sendEmail() {
     if (this.name.value == "" || this.email.value == "" ||
     this.description.value == "" ) {
-      this.presentToast("Please fill the filds");
+      this.presentToast("Plotesoni te gjitha te dhenat!");
     }else{
-      this.presentToast("Message succesfully sended by " + this.email.value);
+      this.presentToast("Email-i u dergua me sukses" + this.email.value);
     }
   }
 

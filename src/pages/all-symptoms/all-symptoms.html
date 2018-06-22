@@ -15,7 +15,7 @@
             <ion-input #age col-8 type="number" placeholder="Mosha" aria-required="true" center></ion-input>
             <ion-row>
                 <ion-col col-md-6>
-                    <button ion-button outline (click)="goNext('mashkull')">
+                    <button ion-button outline>
                         Mashkull
                     </button>
                 </ion-col>
@@ -51,9 +51,9 @@
 
         <ion-slide>
             <h2 class="slide-title">Gjej semundjen</h2>
-            <button ion-button icon-end large clear>
+            <button ion-button icon-end large clear (click)="showDesease()">
             Vazhdo
-            <ion-icon name="arrow-forward" (click)="showDesease()"></ion-icon>
+            <ion-icon name="arrow-forward"></ion-icon>
             </button>
         </ion-slide>
 
